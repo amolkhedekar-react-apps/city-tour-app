@@ -6,13 +6,17 @@
 }
 .tour:hover {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  transform: translateY(-5px);
+  transform: translateY(-3px);
+}
+.tour__image{
+  display: flex;
+  padding: 1rem 1rem;
 }
 .tour img {
   width: 100%;
   max-width: 100%;
-  display: block;
   min-height: 15rem;
+  align-self: center;
 }
 .tour__info {
 }
@@ -48,6 +52,7 @@
   }
   .tour img {
     min-height: 15rem;
+    min-width: 18rem;
   }
   .city {
     margin: 0.5rem 1rem;
