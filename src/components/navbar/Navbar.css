@@ -1,0 +1,46 @@
+.header {
+  
+  padding: 1rem 2rem;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+.header__brand {
+  flex: 0.6;
+  color:#00b4d8;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+.nav-link {
+  color: black;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s linear;
+}
+.nav-link:hover {
+  color: aliceblue;
+  background-color: #00b4d8;
+  padding: 0.5rem 1rem;
+}
+.active {
+  background-color: #00b4d8;
+  color: aliceblue;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+  .header__brand{
+    text-align: center;
+    margin:0 1rem;
+  }
+  .header__nav {
+    margin-top: 2rem;
+  }
+}
